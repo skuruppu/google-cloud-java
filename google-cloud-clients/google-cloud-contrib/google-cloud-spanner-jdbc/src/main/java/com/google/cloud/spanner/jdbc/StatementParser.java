@@ -388,7 +388,7 @@ class StatementParser {
     // Valid statement hints at the beginning of a SQL statement can only contain a fixed set of
     // possible values. Although it is possible to add a @{FORCE_INDEX=...} as a statement hint, the
     // only allowed value is _BASE_TABLE. This means that we can safely assume that the statement
-    // hint will not contain any special characters, such as for example a closing curly brace, and
+    // hint will not contain any special characters, for example a closing curly brace, and
     // that we can keep the check simple by just searching for the first occurrence of a closing
     // curly brace at the end of the statement hint.
     int startStatementHintIndex = sql.indexOf('{');
