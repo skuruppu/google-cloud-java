@@ -390,7 +390,7 @@ class StatementParser {
     // only allowed value is _BASE_TABLE. This means that we can safely assume that the statement
     // hint will not contain any special characters, such as for example a closing curly brace, and
     // that we can keep the check simple by just searching for the first occurrence of a closing
-    // curly brace as the end of the statement hint.
+    // curly brace at the end of the statement hint.
     int startStatementHintIndex = sql.indexOf('{');
     int endStatementHintIndex = sql.indexOf('}');
     if (startStatementHintIndex == -1 || startStatementHintIndex > endStatementHintIndex) {
